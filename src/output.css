@@ -661,10 +661,6 @@ video {
   left: 50%;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .top-\[50px\] {
   top: 50px;
 }
@@ -683,18 +679,6 @@ video {
 
 .z-\[1\] {
   z-index: 1;
-}
-
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
-.col-span-7 {
-  grid-column: span 7 / span 7;
 }
 
 .float-start {
@@ -1253,14 +1237,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1449,20 +1425,16 @@ video {
   gap: 0.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2104,11 +2076,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2604,12 +2571,12 @@ video {
     position: sticky;
   }
 
-  .md\:col-span-7 {
-    grid-column: span 7 / span 7;
-  }
-
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .md\:grid-cols-12 {
@@ -2620,6 +2587,11 @@ video {
     padding: 2.5rem;
   }
 
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2628,11 +2600,6 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 }
 
@@ -2676,11 +2643,6 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
-
-  .lg\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -2688,8 +2650,8 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .xl\:text-9xl {
-    font-size: 8rem;
+  .xl\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

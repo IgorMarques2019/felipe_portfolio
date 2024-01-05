@@ -40,10 +40,10 @@ duration:0.5
   )
 
   tl2.fromTo('#title_aboutme',{
-y:40,
+x:-100,
 opacity:0
   },{
-    y:0,
+    x:0,
     opacity:1,
     duration:0.5
   })
@@ -64,6 +64,7 @@ opacity:0
           start:'top bottom',
           end:'center  300px',
           scrub:true,
+          
       }}
     )
 
@@ -76,7 +77,8 @@ opacity:0
       duration:0.5,
       scrollTrigger:{
         trigger:'#experiencia #title_experience',
-        start:'top bottom'
+        start:'top bottom',
+        end:'center 400px',
       }
     })
 
@@ -92,3 +94,34 @@ opacity:0
         opacity:1,
       })
     })
+
+
+mm.add('(min-width:1280px)',()=>{
+
+
+
+
+})
+
+const tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#cursos .container', //Onde Começa a animação
+    start:'top bottom',
+    end:'center  300px',
+    scrub:true,
+    
+    
+}}
+)
+
+
+let cursoItems = document.querySelectorAll('.curso')
+  cursoItems.forEach((item) =>{
+    tl4.fromTo(item,{
+      x:-100,
+      opacity:0
+    },{
+      x:0,
+      opacity:1,
+    })
+  })
