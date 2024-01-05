@@ -1,0 +1,87 @@
+#experiencia {
+  #experience-grid {
+    .experience {
+      // background-color: #5251512f;
+      // padding:20px;
+      // border-radius:5px;
+
+      background: rgba(250, 248, 248, 0.041);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      padding:20px;
+      border-radius:10px;
+
+      h3 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 10px;
+          display: block;
+          background: linear-gradient(
+            115deg,
+            #2253ff 33.97%,
+            #f80d56 84.34%,
+            #ff7f22 150.83%
+          );
+        }
+      }
+      .lista_trabalho {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+          display: block;
+        }
+
+        .cargo,
+        .tempo {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 15px;
+          &::before {
+            content: "";
+            display: block;
+            width: 34px;
+            height: 34px;
+            background-size: cover;
+          }
+        }
+
+        .cargo {
+          &::before {
+            background: url("../img/icons/indentif.svg");
+          }
+        }
+
+        .tempo {
+          &::before {
+            background: url("../img/icons/duration_course.svg");
+          }
+        }
+
+        .desc_trab {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+
+          &::before {
+            flex-shrink: 0;
+            content: " ";
+            display: block;
+            width: 34px;
+            height: 34px;
+            background: url("../img/icons/description.svg");
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}

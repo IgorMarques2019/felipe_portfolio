@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+.poppins {
+  font-family: "Poppins";
+}
+
+.space-g {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.blue-text {
+  color: #2253FF;
+}
+
+.gray-text {
+  color: #8F8F8F;
+}
+
+.bg-blur-dark {
+  background-color: rgba(0, 0, 0, 0.7333333333);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#experiencia #experience-grid .experience {
+  background: rgba(250, 248, 248, 0.041);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+}
+#experiencia #experience-grid .experience h3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+#experiencia #experience-grid .experience h3::before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  display: block;
+  background: linear-gradient(115deg, #2253ff 33.97%, #f80d56 84.34%, #ff7f22 150.83%);
+}
+#experiencia #experience-grid .experience .lista_trabalho {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#experiencia #experience-grid .experience .lista_trabalho span {
+  display: block;
+}
+#experiencia #experience-grid .experience .lista_trabalho .cargo,
+#experiencia #experience-grid .experience .lista_trabalho .tempo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+#experiencia #experience-grid .experience .lista_trabalho .cargo::before,
+#experiencia #experience-grid .experience .lista_trabalho .tempo::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+}
+#experiencia #experience-grid .experience .lista_trabalho .cargo::before {
+  background: url("../img/icons/indentif.svg");
+}
+#experiencia #experience-grid .experience .lista_trabalho .tempo::before {
+  background: url("../img/icons/duration_course.svg");
+}
+#experiencia #experience-grid .experience .lista_trabalho .desc_trab {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+#experiencia #experience-grid .experience .lista_trabalho .desc_trab::before {
+  flex-shrink: 0;
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url("../img/icons/description.svg");
+  background-size: cover;
+}
+
+body {
+  background-color: #000;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #2253FF;
+}
+
+#cursos #grid-cursos {
+  position: relative;
+}
+#cursos #grid-cursos .curso {
+  padding: 20px;
+}
+#cursos #grid-cursos .curso h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#cursos #grid-cursos .curso h3::before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  display: block;
+  background: linear-gradient(115deg, #2253ff 33.97%, #f80d56 84.34%, #ff7f22 150.83%);
+}
+#cursos #grid-cursos .curso .platform,
+#cursos #grid-cursos .curso .duration_course,
+#cursos #grid-cursos .curso .learning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+#cursos #grid-cursos .curso .platform::before,
+#cursos #grid-cursos .curso .duration_course::before,
+#cursos #grid-cursos .curso .learning::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+#cursos #grid-cursos .curso .platform::before {
+  background: url("../img/icons/graduation.svg");
+}
+#cursos #grid-cursos .curso .duration_course::before {
+  background: url("../img/icons/ampulheta.svg");
+  background-position: center;
+}
+#cursos #grid-cursos .curso .learning::before {
+  background: url("../img/icons/software learn.svg");
+}
+
+@media screen and (min-width: 1520px) {
+  #course-title-principals {
+    max-width: 8ch;
+    color: gray;
+  }
+}/*# sourceMappingURL=index.css.map */

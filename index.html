@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <title>Portfólio - Felipe B. Freitas</title>
+
+  <!-- Framworks GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+</head>
+
+<body>
+  <section aria-label="Apresentação" class="grid relative grid-cols-1 lg:grid-cols-2 w-[100%] h-[100vh] p-0 m-0 justify-center items-center">
+    <div class="profile-area bg-blur-dark z-[1] w-[100%] h-[100%] flex items-center justify-center">
+      <div class="profile-info  flex gap-3 flex-col p-5">
+        <p id="saudacao" class="lg:text-3xl sm:text-2xl text-2xl  text-white">Olá <span class="blue-text font-bold">eu sou</span></p>
+        <h1 id="nome" class="lg:text-6xl sm:text-5xl text-4xl space-g text-white">Felipe B. Freitas</h1>
+        <p id="cargo-apresentacao" class="lg:text-4xl sm:text-3xl text-2xl gray-text">Engenheiro Civil</p>
+      </div>
+    </div>
+
+    <div class="absolute lg:relative profile-pic w-[100%] h-[100vh]">
+      <img class=" z-[0]  block lg:aspect-square object-cover object-center  w-[100%] h-[100%]" src="./src/img/profile/profile.jpg" alt="">
+    </div>
+    <img class="block animate-bounce absolute bottom-[48px] left-[50%]  translate-x-[-50%] z-[1]" src="./src/img/icons/mouse.svg" alt="mouse_icone">
+
+  </section>
+
+  <section class="my-[198px]">
+    <div class="container mx-auto grid lg:grid-cols-12 grid-cols-1">
+      <div id="about-me" class="lg:col-span-8 flex flex-col gap-3 p-5 md:p-10">
+        <h2 id="title_aboutme" class="space-g mb-4 text-4xl text-white font-bold md:text-6xl lg:text-6xl">Sobre Mim</h2>
+        <p class="about-text poppins md:text-xl lg:text-2xl gray-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio atque quaerat dignissimos deserunt, vel unde! Illo, recusandae tempora assumenda quasi delectus cum sit quo error tempore dolorum iure, temporibus culpa quae reprehenderit! Adipisci nihil, eveniet quod consequuntur exercitationem nisi omnis placeat magnam blanditiis modi molestiae praesentium voluptatem numquam laudantium rerum vitae mollitia itaque ut optio iusto iure minima eum ea autem? Natus earum aliquid tenetur laborum at est, quas nemo dicta labore corrupti molestias nulla veritatis consectetur expedita, sit magni, nisi eos officia deleniti dignissimos ut vel impedit. Quod nulla delectus reprehenderit aliquam quisquam adipisci corporis non corrupti quibusdam eos.</p>
+
+        <p class="about-text poppins md:text-xl lg:text-2xl gray-text  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio atque quaerat dignissimos deserunt, vel unde! Illo, recusandae tempora assumenda quasi delectus cum sit quo error tempore dolorum iure, temporibus culpa quae reprehenderit! Adipisci nihil, eveniet quod consequuntur exercitationem nisi omnis placeat magnam blanditiis modi molestiae praesentium voluptatem numquam laudantium rerum vitae mollitia itaque ut optio iusto iure minima eum ea autem? Natus earum aliquid tenetur laborum at est, quas nemo dicta labore corrupti molestias nulla veritatis consectetur expedita, sit magni, nisi eos officia deleniti dignissimos ut vel impedit. Quod nulla delectus reprehenderit aliquam quisquam adipisci corporis non corrupti quibusdam eos.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section id="experiencia">
+    <div class="container mx-auto p-5">
+      <h2 id="title_experience" class="space-g mb-4 text-4xl text-white font-bold md:text-6xl lg:text-6xl">Experiência Profissional</h2>
+      <div id="experience-grid" class="mt-20 grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 gap-1">
+        <div class="experience">
+          <h3 class="local_trabalho space-g text-xl lg:text-3xl mb-15 font-bold text-white">AC CON Construções</h3>
+          <div class="lista_trabalho">
+            <span class="poppins gray-text cargo">Estagiário de obras e qualidade</span>
+            <span class="poppins gray-text tempo">3 Meses</span>
+            <span class="poppins gray-text desc_trab">Acompanhamento de obras residenciais de alto padrão, controle de medições, levantamento de materiais, requisição e cotação de materiais, controle de qualidade ISO 9001 e SIAC (Preenchimento de FVS e FVM), tratativa com cliente, controle de projetos</span>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h3 class="local_trabalho space-g text-xl lg:text-3xl mb-15 font-bold text-white">CEM Construtora</h3>
+          <div class="lista_trabalho">
+            <span class="poppins gray-text cargo">Estágiario de obras</span>
+            <span class="poppins gray-text tempo">5 Meses</span>
+            <span class="poppins gray-text desc_trab">Acompanhamento de obras industriais (Galpão industrial), controle de medições, controle de mapa de chuvas, controle de projetos, levantamento de materiais, requisição e cotação de materiais, inspeção de serviços.</span>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h3 class="local_trabalho space-g text-xl lg:text-3xl mb-15 font-bold text-white">TARRAF Incorporadora</h3>
+          <div class="lista_trabalho">
+            <span class="poppins gray-text cargo">Assistente de engenharia</span>
+            <span class="poppins gray-text tempo">Até o momento</span>
+            <span class="poppins gray-text desc_trab">Acompanhamento de obras de edifício residencial de alto padrão (Edifício Monajardin), Responsável pelo setor de qualidade da obra, acompanhamento de auditorias internas, controle de projetos, preenchimento de documentos da qualidade conforme a ISO 9001 e SIAC, Controle de medições, tratativa com empreiteiros, realização de contratos e aquisição de materiais</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="cursos">
+    <div class="container mx-auto mt-[198px] grid grid-cols-1 md:grid-cols-12 gap-5">
+      <div id="title-curso" class="md:col-span-7 p-5">
+        <h2 id="course-title-principals" class="space-g md:sticky top-[50px] text-white text-4xl md:text-5xl lg:text-6xl xl:text-[200px]">CURSOS E APRIMORAMENTOS</h2>
+      </div>
+      <div id="grid-cursos" class="md:col-span-5 flex flex-col gap-10">
+        <div class="curso">
+          <h3 class="space-g text-xl lg:text-3xl mb-15 font-bold text-white">Autocad 2d e 3d</h3>
+          <span class="poppins gray-text platform">Udemy</span>
+          <span class="poppins gray-text duration_course">66h</span>
+          <span class="poppins gray-text learning">Uso da software Autocad 2D e 3D</span>
+        </div>
+
+        <div class="curso">
+          <h3 class="space-g text-xl lg:text-3xl mb-15 font-bold text-white">Iniciação Profissional em Desenho Arquitetônico</h3>
+          <span class="poppins gray-text platform">Senai - Online</span>
+          <span class="poppins gray-text duration_course">14h</span>
+          <span class="poppins gray-text learning">Conceitos de desenho</span>
+        </div>
+
+        <div class="curso">
+          <h3 class="space-g text-xl lg:text-3xl mb-15 font-bold text-white">O Projeto Estrutural Completo</h3>
+          <span class="poppins gray-text platform">Rangel Laje - Online</span>
+          <span class="poppins gray-text duration_course">08h</span>
+          <span class="poppins gray-text learning">Conceitos estruturais, e dimensionamento de elementos em concreto armado</span>
+        </div>
+
+        <div class="curso">
+          <h3 class="space-g text-xl lg:text-3xl mb-15 font-bold text-white">Excel do Básico ao Avançado</h3>
+          <span class="poppins gray-text platform">Udemy</span>
+          <span class="poppins gray-text duration_course">Cursando</span>
+          <span class="poppins gray-text learning">Uso do software MS Project do básico ao avançado</span>
+        </div>
+
+        <div class="curso">
+          <h3 class="space-g text-xl lg:text-3xl mb-15 font-bold text-white">Curso os Reviteiros</h3>
+          <span class="poppins gray-text platform">Udemy</span>
+          <span class="poppins gray-text duration_course">Cursando</span>
+          <span class="poppins gray-text learning">Uso do software Revit (Arquitetônico, estrutural e MEP), incluso curso de Eberik e
+            Autocad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="./src/js/animations.js"></script>
+
+</html>
