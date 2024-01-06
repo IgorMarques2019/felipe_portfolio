@@ -1,0 +1,71 @@
+#cursos {
+  #grid-cursos {
+position:relative;
+
+    .curso {
+      padding:20px;
+      h3 {
+        text-transform: uppercase;
+        margin-bottom:20px;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 10px;
+          display: block;
+          background: linear-gradient(
+            115deg,
+            #2253ff 33.97%,
+            #f80d56 84.34%,
+            #ff7f22 150.83%
+          );
+        }
+      }
+
+      .platform,
+      .duration_course,
+      .learning {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        gap:20px;
+        &::before {
+          content: "";
+          width: 28px;
+          height: 28px;
+        
+          display: block;
+          background-size:cover;
+          background-repeat:no-repeat;
+          flex-shrink:0;
+        }
+      }
+
+      .platform {
+        &::before{
+          background: url("../img/icons/graduation.svg");
+        }
+      }
+
+      .duration_course {
+        &::before{
+          background: url("../img/icons/ampulheta.svg");
+          background-position:center;
+        }
+      }
+
+      .learning {
+        &::before{
+          background: url("../img/icons/software\ learn.svg");
+         
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1520px) {
+  #course-title-principals {
+    max-width:8ch;
+    
+  }
+}
