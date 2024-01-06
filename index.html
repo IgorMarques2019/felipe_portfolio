@@ -4,9 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags de Compartilhamento -->
+  <meta property="og:title" content="Meu Currículo - Felipe B.">
+  <meta property="og:description" content="Olá seja bem-vindos ao meu currículo online.">
+  <meta property="og:image" content="./src/img/profile/icon-share">
+
+  <!-- Meta Tags de Autor -->
+  <meta name="author" content="Felipe B. Freitas">
+
   <link rel="stylesheet" href="./src/output.css">
   <link rel="stylesheet" href="./src/css/index.css">
-  <title>Portfólio - Felipe B. Freitas</title>
+  <title>Currículo - Felipe B. Freitas</title>
 
   <!-- Framworks GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
@@ -35,7 +44,7 @@
 
   </section>
 
-  <section class="my-[198px]">
+  <section aria-label="Sobre Mim" class="my-[198px]">
     <div class="container mx-auto grid lg:grid-cols-12 grid-cols-1">
       <div id="about-me" class="lg:col-span-8 flex flex-col gap-3 p-5 md:p-10">
         <h2 id="title_aboutme" class="space-g mb-4 text-4xl text-white font-bold md:text-6xl lg:text-6xl">Sobre Mim</h2>
@@ -49,7 +58,7 @@
   </section>
 
 
-  <section id="experiencia">
+  <section aria-label="Minha Experiência Profissional" id="experiencia">
     <div class="container mx-auto p-5">
       <h2 id="title_experience" class="space-g mb-4 text-4xl text-white font-bold md:text-6xl lg:text-6xl">Experiência Profissional</h2>
       <div id="experience-grid" class="mt-20 grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 gap-1">
@@ -85,7 +94,7 @@
     </div>
   </section>
 
-  <section id="cursos">
+  <section aria-label="Meus cursos Realizados" id="cursos">
     <div class="container mx-auto mt-[198px] grid grid-cols-1 md:grid-cols-12 gap-5">
       <div id="title-curso" class="md:col-span-7 p-5">
         <h2 id="course-title-principals" class="space-g md:sticky top-[50px] gray-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl">CURSOS E APRIMORAMENTOS</h2>
@@ -132,7 +141,7 @@
 
 
 
-  <section id="particles-js" class="h-[100vh] w-[100%] overflow-hidden relative">
+  <section aria-label="Motivacional" id="particles-js" class="h-[100vh] w-[100%] overflow-hidden relative">
 
     <div class="w-[100%] lg:w-[900px] sm:w- phrase overflow-hidden">
       <h2 class="text-white space-g text-2xl sm:text-3xl md:text-4xl lg:text-5xl">"Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende."</h2>
