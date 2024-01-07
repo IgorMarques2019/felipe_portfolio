@@ -3,7 +3,8 @@
 @import "./index/cursos";
 
 body {
-   background-color: #000;
+   background: #000 url('../img/background.png');
+   background-size:cover;
 }
 
 html {

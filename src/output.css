@@ -2634,10 +2634,6 @@ video {
     aspect-ratio: 1 / 1;
   }
 
-  .lg\:w-\[inherit\] {
-    width: inherit;
-  }
-
   .lg\:w-\[900px\] {
     width: 900px;
   }
@@ -2648,6 +2644,26 @@ video {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:rounded-bl-3xl {
+    border-bottom-left-radius: 1.5rem;
+  }
+
+  .lg\:rounded-bl-\[\] {
+    border-bottom-left-radius: ;
+  }
+
+  .lg\:rounded-bl-\[100px\] {
+    border-bottom-left-radius: 100px;
+  }
+
+  .lg\:rounded-bl-\[0px\] {
+    border-bottom-left-radius: 0px;
+  }
+
+  .lg\:rounded-bl-\[50px\] {
+    border-bottom-left-radius: 50px;
   }
 
   .lg\:text-2xl {

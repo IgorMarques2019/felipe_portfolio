@@ -12,10 +12,10 @@
 }
 
 .gray-text {
-  color: #8F8F8F;
+  color: #d8d8d8;
 }
 
-.bg-blur-dark {
+.bg-blur-ddark {
   background-color: rgba(0, 0, 0, 0.7333333333);
 }
 
@@ -26,11 +26,14 @@
 }
 
 #experiencia #experience-grid .experience {
-  background: rgba(46, 46, 46, 0.781);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
   padding: 20px;
-  border-radius: 10px;
 }
 #experiencia #experience-grid .experience h3 {
   display: flex;
@@ -143,7 +146,8 @@
   }
 }
 body {
-  background-color: #000;
+  background: #000 url("../img/background.png");
+  background-size: cover;
 }
 
 html::-webkit-scrollbar {
